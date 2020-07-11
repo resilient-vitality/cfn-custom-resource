@@ -246,7 +246,7 @@ impl CustomResourceResponse {
     /// When the request fails to execute the request
     pub async fn finish(self) -> Result<(), reqwest::Error> {
         let client = reqwest::Client::new();
-        client.post(&self.response_url).json(&self).send().await?;
+        client.put(&self.response_url).json(&self).send().await?;
         Ok(())
     }
 }

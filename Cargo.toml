@@ -1,6 +1,6 @@
 [package]
 name = "cfn-custom-resource"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Zach Probst <zprobst@resilientvitality.com>"]
 edition = "2018"
 description = "A Rust create to facilitate the creation of Rust Lambda Powered Custom Resources"

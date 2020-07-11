@@ -1,0 +1,23 @@
+[package]
+name = "cfn-custom-resource"
+version = "0.1.0"
+authors = ["Zach Probst <zprobst@resilientvitality.com>"]
+edition = "2018"
+description = "A Rust create to facilitate the creation of Rust Lambda Powered Custom Resources"
+readme = "README.md"
+homepage = "https://github.com/resilient-vitality/cfn-custom-resource"
+repository = "https://github.com/resilient-vitality/cfn-custom-resource"
+license = "MIT OR Apache-2.0"
+keywords = ["aws", "cloudformation", "lambda"]
+categories = [ "web-programming" ]
+
+[dependencies]
+reqwest = { version = "0.10.6", features = ["json"] }
+serde = { version = "1", features = ["derive"]}
+uuid = { version = "0.8", features = ["serde", "v4"] }
+
+[dev-dependencies.serde_json]
+version = "1"
+
+[dev-dependencies.pretty_assertions]
+version = "0.6.1"
